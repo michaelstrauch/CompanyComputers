@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class CompanyComputers {
@@ -17,6 +18,15 @@ public class CompanyComputers {
         }
 
         System.out.println("Computers in list: " + computersList.size());
+
+        Employee employee1 = new Employee("CEO Tom", LocalDate.of(1980, 1, 25));
+        Employee employee2 = new Employee("Secretary Samantha", LocalDate.of(1999, 5, 1));
+
+        employee1.addComputer(computer1);
+        employee2.addComputer(computer2);
+
+        System.out.println(employee1);
+        System.out.println(employee2);
 
     }
 }
